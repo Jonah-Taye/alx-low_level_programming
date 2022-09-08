@@ -7,6 +7,7 @@
 int main(void)
 {
 	char printText[] = "\"Programming is like building a multilingual puzzle";
+
 	puts(printText);
 	return (0);
 }
