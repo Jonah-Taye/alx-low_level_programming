@@ -15,8 +15,8 @@ int main(void)
 		putchar(numbers);
 		if (numbers < 57)
 		{
-			putchar(' ');
 			putchar(comma);
+			putchar(' ');
 			numbers++;
 		}
 		else
