@@ -7,12 +7,13 @@
 int main(void)
 {
 	char letters = 'a';
-	
-	while(letters < 123)
+
+	while (letters < 123)
 	{
 		putchar(letters);
 		letters++;
 	}
+	putchar('\n');
 
 	return (0);
 }
