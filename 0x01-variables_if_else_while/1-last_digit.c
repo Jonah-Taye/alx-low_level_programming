@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Checks if the last digit of the integer 
+ * main - Checks if the last digit of the integer
  * is less than 6 and not 0, is 0, or greater than 5
  *
  * Return: Always 0 (Success)
