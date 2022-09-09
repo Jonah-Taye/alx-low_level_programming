@@ -9,7 +9,7 @@ int main(void)
 	char letters = 'a';
 	char numbers = 48;
 
-	while (smallLetters <= 57)
+	while (numbers <= 57)
 	{
 		putchar(numbers);
 		numbers++;
