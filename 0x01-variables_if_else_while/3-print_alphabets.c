@@ -12,7 +12,7 @@ int main(void)
 	while (smallLetters <= 'z')
 	{
 		putchar(smallLetters);
-		letters++;
+		smallLetters++;
 	}
 	while (capitalLetters <= 'Z')
 	{
