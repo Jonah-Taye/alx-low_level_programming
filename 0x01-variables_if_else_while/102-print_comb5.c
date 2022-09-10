@@ -16,18 +16,18 @@ int main(void)
 	{
 		for (digit2 = 48; digit2 < 57; digit2++)
 		{
-			for (digit3 = 48; digit3 < 58; digit3++)
+			for (digit3 = digit1; digit3 < 58; digit3++)
 			{
 				for (digit4 = digit2; digit4 < 58; digit4++)
 				{
-					if (digit2 == digit4)
+					if (digit1 == digit3 && digit2 == digit4)
 						digit4++;
 					putchar(digit1);
 					putchar(digit2);
 					putchar(' ');
 					putchar(digit3);
 					putchar(digit4);
-					if (digit2 < 56)
+					if (digit2 != 56)
 					{
 						putchar(comma);
 						putchar(' ');
