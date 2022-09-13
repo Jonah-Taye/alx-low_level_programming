@@ -20,6 +20,7 @@ void times_table(void)
 			product = number1 * number2;
 			product1 = product / 10;
 			product2 = product % 10;
+			
 			if (product >= 10)
 			{
 				_putchar(product1 + '0');
@@ -32,16 +33,19 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(product + '0');
-				if(number2 < 9)
+				if (number2 > 8)
 				{
-					_putchar(',');
 					_putchar(' ');
+					_putchar(product + '0');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(product + '0');
+					_putchar(',');
 					_putchar(' ');
 				}
 			}
-
-		}
-		_putchar('\n');
+			__putchar('\n');
 	}
 }
