@@ -3,13 +3,13 @@
 /**
  * print_alphabet - prints the alphabets in lowercase
  *
- * Void function doesn't have a return statment
+ * Return: Void
  */
 void print_alphabet(void)
 {
-	char letters = 'a';
+	char letters = 97;
 
-	while (letters <= 'z')
+	while (letters <= 122)
 	{
 		_putchar(letters);
 	}
