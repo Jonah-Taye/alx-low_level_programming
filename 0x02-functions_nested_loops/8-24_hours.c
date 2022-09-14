@@ -12,7 +12,7 @@ void jack_bauer(void)
 	
 	for (hour1 = 0; hour1 < 3; hour1++)
 	{
-		for(hour2 = 0; hour2 < 4; hour2++)
+		for(hour2 = 0; hour2 < 10; hour2++)
 		{
 			for(minute1 = 0; minute1 < 6; minute1++)
 			{
@@ -24,6 +24,8 @@ void jack_bauer(void)
 					_putchar(minute1 + '0');
 					_putchar(minute2 + '0');
 					_putchar('\n');
+					if (hour1 == 2 && hour2 == 3 && minute1 == 5 && minute2 == 9)
+						return;
 				}
 			}
 		}

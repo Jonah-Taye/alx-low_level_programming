@@ -33,18 +33,11 @@ void times_table(void)
 			}
 			else
 			{
-				if (number2 > 8)
-				{
-					_putchar(' ');
-					_putchar(product + '0');
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(product + '0');
-					_putchar(',');
-					_putchar(' ');
-				}
+				putchar(' ');
+				putchar(product + '0');
+				if (number2 < 9)
+					putchar(',');
+				putchar(' ');
 			}
 		}
 		_putchar('\n');
