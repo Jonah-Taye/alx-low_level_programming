@@ -20,7 +20,7 @@ void times_table(void)
 			product = number1 * number2;
 			product1 = product / 10;
 			product2 = product % 10;
-	
+
 			if (number2 == 0)
 			{
 				_putchar(product + '0');
