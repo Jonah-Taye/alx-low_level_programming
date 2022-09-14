@@ -33,11 +33,11 @@ void times_table(void)
 			}
 			else
 			{
-				putchar(' ');
-				putchar(product + '0');
+				_putchar(' ');
+				_putchar(product + '0');
 				if (number2 < 9)
-					putchar(',');
-				putchar(' ');
+					_putchar(',');
+				_putchar(' ');
 			}
 		}
 		_putchar('\n');
