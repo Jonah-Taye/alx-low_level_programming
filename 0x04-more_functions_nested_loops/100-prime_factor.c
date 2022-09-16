@@ -20,6 +20,6 @@ int main(void)
 		}
 	}
 	printf("%lu\n", dividend);
-	
-    return (0);
+
+	return (0);
 }
