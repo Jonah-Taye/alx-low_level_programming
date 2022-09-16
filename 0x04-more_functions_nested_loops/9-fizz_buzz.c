@@ -28,7 +28,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ", numbers);rer
+			printf("%d ", numbers);
 		}
 	}
 	printf("\n");
