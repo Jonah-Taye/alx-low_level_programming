@@ -9,7 +9,7 @@
 void print_triangle(int size)
 {
 	int counter1;
-	int counter2;
+	int counter2;adf
 	int counter3;
 
 	if (size > 0)

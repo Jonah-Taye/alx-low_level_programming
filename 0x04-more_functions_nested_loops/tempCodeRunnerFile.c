@@ -140,11 +140,11 @@ void print_triangle(int size)
  */
 int main(void)
 {
-	/* int numbers;
+	 int numbers;
 
 	for (numbers = 1; numbers <= 100; numbers++)
 	{
-		if (numbers % 3 == 0 && numbers % 5 == 0)
+		if (numbers % 15 == 0)
 		{
 			printf("FizzBuzz ");
 		}
@@ -174,7 +174,7 @@ int main(void)
     print_diagonal(-4);
     print_square(2);
     print_square(10);
-    print_square(0);*/
+    print_square(0);
     print_triangle(2);
     print_triangle(10);
     print_triangle(1);
