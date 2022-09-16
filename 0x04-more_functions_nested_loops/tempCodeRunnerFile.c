@@ -85,15 +85,21 @@ void print_diagonal(int n)
 
 void print_square(int size)
 {
-    int counter1;
-    int counter2;
-
-    for (counter1 = 0; counter1 <= size - 1; counter1++)
-    {
-        for (counter2 = 1; counter2 <= size; counter2++)
-            putchar('#');
-        putchar('\n');
-    }
+    	int counter1;
+	int counter2;
+	if (size > 0)
+	{
+		for (counter1 = 0; counter1 <= size - 1; counter1++)
+		{
+			for (counter2 = 1; counter2 <= size; counter2++)
+				putchar('#');
+			putchar('\n');
+		}
+	}
+	else
+	{
+		putchar('\n');
+	}
 }
 
 void print_triangle(int size)
@@ -158,9 +164,12 @@ int main(void)
     print_line(0);
     print_line(2);
     print_line(10);
-    print_line(-4);*/
+    print_line(-4);
     print_diagonal(0);
     print_diagonal(2);
     print_diagonal(10);
-    print_diagonal(-4);
+    print_diagonal(-4);*/
+    print_square(2);
+    print_square(10);
+    print_square(0);
 }
