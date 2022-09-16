@@ -67,12 +67,18 @@ void print_diagonal(int n)
 {
     int counter1;
     int counter2;
-
+    if (n > 0)
+    {
     for (counter1 = 0; counter1 <= n - 1; counter1++)
     {
-        for (counter2 = 0; counter2 <= counter1; counter2++)
+        for (counter2 = 1; counter2 <= counter1; counter2++)
             putchar(' ');
         putchar(92);
+        putchar('\n');
+    }
+    }
+    else
+    {
         putchar('\n');
     }
 }
@@ -153,8 +159,8 @@ int main(void)
     print_line(2);
     print_line(10);
     print_line(-4);*/
-    // print_diagonal(0);
+    print_diagonal(0);
     print_diagonal(2);
     print_diagonal(10);
-    //print_diagonal(-4);
+    print_diagonal(-4);
 }
