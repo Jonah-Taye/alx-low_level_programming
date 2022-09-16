@@ -137,7 +137,7 @@ void print_triangle(int size)
  * by both 3 and 5 prints FizzBuzz
  *
  * Return: Always 0.
- */
+ 
 int main(void)
 {
 	 int numbers;
@@ -179,4 +179,31 @@ int main(void)
     print_triangle(10);
     print_triangle(1);
     print_triangle(0);
+}
+*/
+int main(void)
+{
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			if (i % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			if (i % 5 == 0)
+			{
+				printf("Buzz");
+			}
+		} else
+		{
+			printf("%d", i);
+		}
+		if (i != 100)
+			printf(" ");
+	}
+	printf("\n");
+	return (0);
 }
