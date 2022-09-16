@@ -104,22 +104,25 @@ void print_square(int size)
 
 void print_triangle(int size)
 {
-    int counter1;
-    int counter2;
-    int counter3;
+    	int counter1;
+	int counter2;
+	int counter3;
 
-    for (counter1 = 0; counter1 <= size - 1; counter1++)
-    {
-        for (counter2 = counter1; counter2 <= size - 1; counter2++)
-        {
-            putchar(' ');
-        }
-        for (counter3 = 0; counter3 <= counter1; counter3++)
-        {
-            putchar('#');
-        }
-        putchar('\n');
-    }
+	if (size > 0)
+	{
+		for (counter1 = 0; counter1 <= size - 1; counter1++)
+		{
+			for (counter2 = counter1; counter2 <= size - 2; counter2++)
+				putchar(' ');
+			for (counter3 = 0; counter3 <= counter1; counter3++)
+				putchar('#');
+			putchar('\n');
+		}
+	}
+	else
+	{
+		putchar('\n');
+	}
 }
 /**
  * main - check the code
@@ -168,8 +171,12 @@ int main(void)
     print_diagonal(0);
     print_diagonal(2);
     print_diagonal(10);
-    print_diagonal(-4);*/
+    print_diagonal(-4);
     print_square(2);
     print_square(10);
-    print_square(0);
+    print_square(0);*/
+    print_triangle(2);
+    print_triangle(10);
+    print_triangle(1);
+    print_triangle(0);
 }
