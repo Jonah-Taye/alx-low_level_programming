@@ -10,8 +10,8 @@
 void print_rev(char *s)
 {
 	int i = 0;
-	int j = 0;
-	char temp[100];
+	int j = -1;
+	char temp[1000];
 
 	while (*s != '\0')
 	{
@@ -19,6 +19,7 @@ void print_rev(char *s)
 		i++;
 		s++;
 	}
+	_putchar('\n');
 	while (j < i)
 	{
 		_putchar(temp[i]);
