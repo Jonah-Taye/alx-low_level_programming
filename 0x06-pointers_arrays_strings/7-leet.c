@@ -1,4 +1,4 @@
-#include <string.h>
+#include "main.h"
 
 /**
  * leet - Changes the string into a leet code
